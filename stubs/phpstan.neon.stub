@@ -7,5 +7,7 @@ parameters:
     - app
     - config
     - lang
+  excludePaths:
+    - %rootDir%/../../../*/node_modules/*
   level: 9
   checkMissingIterableValueType: false
