@@ -9,5 +9,5 @@ parameters:
     - lang
   excludePaths:
     - %rootDir%/../../../*/node_modules/*
-  level: 9
+  level: 8
   checkMissingIterableValueType: false
