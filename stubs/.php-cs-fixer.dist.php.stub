@@ -5,6 +5,7 @@ use PhpCsFixer\Finder;
 use PhpCsFixerCustomFixers\Fixer\CommentedOutFunctionFixer;
 
 require __DIR__.'/vendor/autoload.php';
+require __DIR__.'/bootstrap/app.php';
 
 return (new Config)
     ->setFinder(
