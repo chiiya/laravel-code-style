@@ -2,6 +2,9 @@
 
 namespace Chiiya\LaravelCodeStyle;
 
+use Tighten\TLint\Formatters;
+use Tighten\TLint\Formatters\ExcessSpaceBetweenAndAfterImports;
+use Tighten\TLint\Formatters\UnusedImports;
 use Tighten\TLint\Linters\AlphabeticalImports;
 use Tighten\TLint\Linters\ApplyMiddlewareInRoutes;
 use Tighten\TLint\Linters\ArrayParametersOverViewWith;
@@ -11,8 +14,9 @@ use Tighten\TLint\Linters\MailableMethodsInBuild;
 use Tighten\TLint\Linters\NewLineAtEndOfFile;
 use Tighten\TLint\Linters\NoCompact;
 use Tighten\TLint\Linters\NoDatesPropertyOnModels;
-use Tighten\TLint\Linters\NoDump;
 use Tighten\TLint\Linters\NoDocBlocksForMigrationUpDown;
+use Tighten\TLint\Linters\NoDump;
+use Tighten\TLint\Linters\NoJsonDirective;
 use Tighten\TLint\Linters\NoLeadingSlashesOnRoutePaths;
 use Tighten\TLint\Linters\NoSpaceAfterBladeDirectives;
 use Tighten\TLint\Linters\NoStringInterpolationWithoutBraces;
@@ -29,11 +33,6 @@ use Tighten\TLint\Linters\SpacesAroundBladeRenderContent;
 use Tighten\TLint\Linters\TrailingCommasOnArrays;
 use Tighten\TLint\Linters\UseAuthHelperOverFacade;
 use Tighten\TLint\Linters\UseConfigOverEnv;
-use Tighten\TLint\Linters\NoJsonDirective;
-use Tighten\TLint\Formatters\ExcessSpaceBetweenAndAfterImports;
-use Tighten\TLint\Formatters\UnusedImports;
-use Tighten\TLint\Formatters;
-use Tighten\TLint\Linters;
 use Tighten\TLint\Presets\PresetInterface;
 
 class TLintPreset implements PresetInterface
