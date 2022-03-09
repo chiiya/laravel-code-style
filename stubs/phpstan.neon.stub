@@ -1,0 +1,13 @@
+
+includes:
+  - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+  paths:
+    - app
+    - config
+    - resources/lang
+  excludePaths:
+    - %rootDir%/../../../*/Tests/*.php
+  level: 9
+  checkMissingIterableValueType: false

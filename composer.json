@@ -1,0 +1,52 @@
+{
+    "name": "chiiya/laravel-code-style",
+    "description": "Code style and quality configurations for Laravel projects",
+    "keywords": [
+        "chiiya",
+        "laravel",
+        "laravel-code-style"
+    ],
+    "homepage": "https://github.com/chiiya/laravel-code-style",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elisha Witte",
+            "email": "github@chiiya.moe",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "chiiya/code-style-php": "^2.0",
+        "illuminate/contracts": "^9.0",
+        "nunomaduro/larastan": "^2.0",
+        "phpro/grumphp": "^1.8",
+        "spatie/laravel-package-tools": "^1.9.2",
+        "tightenco/tlint": "^6.2"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^6.0",
+        "orchestra/testbench": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Chiiya\\LaravelCodeStyle\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpro/grumphp": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chiiya\\LaravelCodeStyle\\LaravelCodeStyleServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
