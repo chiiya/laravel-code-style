@@ -18,10 +18,6 @@ grumphp:
     composer: ~
     phpcsfixer: ~
     ecs: ~
-    phpstan:
-      configuration: phpstan.neon
-      memory_limit: "-1"
-      use_grumphp_paths: false
     rector: ~
     tlint: ~
   extensions:

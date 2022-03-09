@@ -15,7 +15,8 @@ return (new Config)
             ->in(database_path())
             ->in(lang_path())
             ->in(base_path('routes'))
-            ->in(base_path('tests')),
+            ->in(base_path('tests'))
+            ->exclude('node_modules'),
     )
     ->setRules([
         '@Chiiya' => true,
