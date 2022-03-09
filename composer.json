@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^8.1",
-        "chiiya/code-style-php": "^2.1",
+        "chiiya/code-style-php": "^2.2",
         "illuminate/contracts": "^9.0",
         "nunomaduro/larastan": "^2.0",
         "phpro/grumphp": "^1.8",

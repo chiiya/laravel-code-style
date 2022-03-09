@@ -52,7 +52,7 @@ class TLintPreset implements PresetInterface
             NoLeadingSlashesOnRoutePaths::class,
             NoSpaceAfterBladeDirectives::class,
             NoStringInterpolationWithoutBraces::class,
-            OneLineBetweenClassVisibilityChanges::class,
+            //            OneLineBetweenClassVisibilityChanges::class,
             QualifiedNamesOnlyForClassName::class,
             RemoveLeadingSlashNamespaces::class,
             RequestHelperFunctionWherePossible::class,

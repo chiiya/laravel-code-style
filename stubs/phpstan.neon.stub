@@ -6,8 +6,6 @@ parameters:
   paths:
     - app
     - config
-    - resources/lang
-  excludePaths:
-    - %rootDir%/../../../*/Tests/*.php
+    - lang
   level: 9
   checkMissingIterableValueType: false
