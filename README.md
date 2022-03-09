@@ -52,3 +52,10 @@ php artisan vendor:publish --tag="code-style-config"
 
 Next, adjust the `ecs.php`, `.php-cs-fixer.dist.php`, `rector.php` and `phpstan.neon` files 
 that have just been created in your project folder to suit your project structure.
+
+After publishing the configuration files, you may have to re-initialize GrumPHP:
+
+```bash
+php ./vendor/bin/grumphp git:init
+php ./vendor/bin/grumphp git:deinit
+```
