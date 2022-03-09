@@ -19,6 +19,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         base_path('tests'),
     ]);
     $parameters->set(Option::SKIP, [
-        __DIR__ . '/**/*/node_modules',
+        __DIR__.'/**/*/node_modules',
     ]);
 };

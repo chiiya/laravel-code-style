@@ -16,7 +16,8 @@ grumphp:
     fix_by_default: true
   tasks:
     composer: ~
-    phpcsfixer: ~
+    phpcsfixer:
+      config: '.php-cs-fixer.dist.php'
     ecs: ~
     rector: ~
     tlint: ~
