@@ -21,4 +21,4 @@ grumphp:
     rector: ~
     tlint: ~
   extensions:
-    - Chiiya\CodeStyle\GrumPHPExtensionLoader
+    - Chiiya\LaravelCodeStyle\GrumPHPExtensionLoader
