@@ -56,6 +56,6 @@ that have just been created in your project folder to suit your project structur
 After publishing the configuration files, you may have to re-initialize GrumPHP:
 
 ```bash
-php ./vendor/bin/grumphp git:init
 php ./vendor/bin/grumphp git:deinit
+php ./vendor/bin/grumphp git:init
 ```
