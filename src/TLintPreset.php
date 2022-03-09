@@ -4,7 +4,6 @@ namespace Chiiya\LaravelCodeStyle;
 
 use Tighten\TLint\Formatters;
 use Tighten\TLint\Formatters\ExcessSpaceBetweenAndAfterImports;
-use Tighten\TLint\Formatters\UnusedImports;
 use Tighten\TLint\Linters\AlphabeticalImports;
 use Tighten\TLint\Linters\ApplyMiddlewareInRoutes;
 use Tighten\TLint\Linters\ArrayParametersOverViewWith;
@@ -20,7 +19,6 @@ use Tighten\TLint\Linters\NoJsonDirective;
 use Tighten\TLint\Linters\NoLeadingSlashesOnRoutePaths;
 use Tighten\TLint\Linters\NoSpaceAfterBladeDirectives;
 use Tighten\TLint\Linters\NoStringInterpolationWithoutBraces;
-use Tighten\TLint\Linters\NoUnusedImports;
 use Tighten\TLint\Linters\OneLineBetweenClassVisibilityChanges;
 use Tighten\TLint\Linters\QualifiedNamesOnlyForClassName;
 use Tighten\TLint\Linters\RemoveLeadingSlashNamespaces;
@@ -54,7 +52,6 @@ class TLintPreset implements PresetInterface
             NoLeadingSlashesOnRoutePaths::class,
             NoSpaceAfterBladeDirectives::class,
             NoStringInterpolationWithoutBraces::class,
-            NoUnusedImports::class,
             OneLineBetweenClassVisibilityChanges::class,
             QualifiedNamesOnlyForClassName::class,
             RemoveLeadingSlashNamespaces::class,
@@ -78,7 +75,6 @@ class TLintPreset implements PresetInterface
             ExcessSpaceBetweenAndAfterImports::class,
             Formatters\NewLineAtEndOfFile::class,
             Formatters\NoDocBlocksForMigrationUpDown::class,
-            UnusedImports::class,
         ];
     }
 }
