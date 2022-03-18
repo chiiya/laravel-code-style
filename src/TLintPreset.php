@@ -16,10 +16,8 @@ use Tighten\TLint\Linters\NoDatesPropertyOnModels;
 use Tighten\TLint\Linters\NoDocBlocksForMigrationUpDown;
 use Tighten\TLint\Linters\NoDump;
 use Tighten\TLint\Linters\NoJsonDirective;
-use Tighten\TLint\Linters\NoLeadingSlashesOnRoutePaths;
 use Tighten\TLint\Linters\NoSpaceAfterBladeDirectives;
 use Tighten\TLint\Linters\NoStringInterpolationWithoutBraces;
-use Tighten\TLint\Linters\OneLineBetweenClassVisibilityChanges;
 use Tighten\TLint\Linters\QualifiedNamesOnlyForClassName;
 use Tighten\TLint\Linters\RemoveLeadingSlashNamespaces;
 use Tighten\TLint\Linters\RequestHelperFunctionWherePossible;
@@ -49,10 +47,8 @@ class TLintPreset implements PresetInterface
             NoDatesPropertyOnModels::class,
             NoDump::class,
             NoDocBlocksForMigrationUpDown::class,
-            NoLeadingSlashesOnRoutePaths::class,
             NoSpaceAfterBladeDirectives::class,
             NoStringInterpolationWithoutBraces::class,
-            //            OneLineBetweenClassVisibilityChanges::class,
             QualifiedNamesOnlyForClassName::class,
             RemoveLeadingSlashNamespaces::class,
             RequestHelperFunctionWherePossible::class,
