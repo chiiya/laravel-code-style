@@ -19,7 +19,6 @@ grumphp:
     phpcsfixer:
       config: '.php-cs-fixer.dist.php'
     ecs: ~
-    rector: ~
     tlint: ~
   extensions:
     - Chiiya\LaravelCodeStyle\GrumPHPExtensionLoader

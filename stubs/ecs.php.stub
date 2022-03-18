@@ -8,7 +8,7 @@ require __DIR__.'/vendor/autoload.php';
 require __DIR__.'/bootstrap/app.php';
 
 return static function (ContainerConfigurator $containerConfigurator): void {
-    $containerConfigurator->import(CodeStyle::PHP_CS);
+    $containerConfigurator->import(CodeStyle::ECS);
     $parameters = $containerConfigurator->parameters();
     $parameters->set(Option::PATHS, [
         app_path(),

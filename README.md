@@ -9,8 +9,18 @@
   </strong>
 
   <p align="center">
-    Code style and quality configurations for Laravel projects
+      Code style configurations for Laravel projects using a combination of PHP-CS-Fixer, ECS and Rector. 
   </p>
+
+  <a href="https://packagist.org/packages/chiiya/laravel-code-style">
+    <img src="https://img.shields.io/packagist/v/chiiya/laravel-code-style.svg?style=flat-square" alt="Latest Version on Packagist">
+  </a>
+  <a href="https://github.com/chiiya/laravel-code-style/actions?query=workflow%3Alint+branch%3Amaster">
+    <img src="https://img.shields.io/github/workflow/status/chiiya/laravel-code-style/lint?label=code%20style" alt="GitHub Code Style Action Status">
+  </a>
+  <a href="https://packagist.org/packages/chiiya/laravel-code-style">
+    <img src="https://img.shields.io/packagist/dt/chiiya/laravel-code-style.svg?style=flat-square" alt="Total Downloads">
+  </a>
 
   <p align="center">
     <strong>
@@ -58,4 +68,15 @@ After publishing the configuration files, you may have to re-initialize GrumPHP:
 ```bash
 php ./vendor/bin/grumphp git:deinit
 php ./vendor/bin/grumphp git:init
+```
+
+The GrumPHP config includes tasks for PHP-CS-Fixer, ECS and TLint by default. Tasks for `rector`
+and `phpstan` are not included, since they can take a long time. You may choose to execute them
+separately instead (for example, in a CI pipeline), or add them to your GrumPHP config if you're 
+fine with the longer waiting times:
+
+```yaml
+# Add new entries in grumphp.tasks (grumphp.yml)
+    rector: ~
+    phpstan: ~
 ```
