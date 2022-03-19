@@ -75,8 +75,21 @@ and `phpstan` are not included, since they can take a long time. You may choose 
 separately instead (for example, in a CI pipeline), or add them to your GrumPHP config if you're 
 fine with the longer waiting times:
 
+Example for `grumphp.yml`
 ```yaml
-# Add new entries in grumphp.tasks (grumphp.yml)
+grumphp:
+  tasks:
+    # ...
     rector: ~
     phpstan: ~
+```
+
+Example for a CI config (call these somewhere in your pipeline):
+
+```bash
+./vendor/bin/ecs check
+./vendor/bin/php-cs-fixer fix --dry-run --diff
+./vendor/bin/rector process --dry-run
+./vendor/bin/tlint lint
+./vendor/bin/phpstan analyse --memory-limit=2G
 ```
