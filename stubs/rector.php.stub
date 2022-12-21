@@ -7,9 +7,8 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 require __DIR__.'/vendor/autoload.php';
 require __DIR__.'/bootstrap/app.php';
 
-return static function (ContainerConfigurator $containerConfigurator): void {
-    $parameters = $containerConfigurator->parameters();
-    $parameters->set(Option::PATHS, [
+return static function (RectorConfig $config): void {
+    $config->paths([
         app_path(),
         config_path(),
         database_path(),
@@ -17,9 +16,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         base_path('routes'),
         base_path('tests'),
     ]);
-    $parameters->set(Option::SKIP, [
+    $config->skip([
         __DIR__.'/**/*/node_modules',
     ]);
-    $parameters->set(Option::AUTO_IMPORT_NAMES, true);
-    $containerConfigurator->import(CodeStyle::RECTOR);
+    $config->importNames();
+    $config->import(CodeStyle::RECTOR);
 };
