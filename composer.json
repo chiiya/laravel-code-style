@@ -17,12 +17,12 @@
     ],
     "require": {
         "php": "^8.1",
-        "chiiya/code-style-php": "^2.10",
+        "chiiya/code-style-php": "^2.11",
         "illuminate/contracts": "^9.0",
-        "nunomaduro/larastan": "^2.0",
-        "phpro/grumphp": "^1.13",
-        "spatie/laravel-package-tools": "^1.9.2",
-        "tightenco/tlint": "^6.2"
+        "nunomaduro/larastan": "^2.2",
+        "phpro/grumphp": "^1.14",
+        "spatie/laravel-package-tools": "^1.13",
+        "tightenco/tlint": "^7.0"
     },
     "require-dev": {
         "nunomaduro/collision": "^6.0",
