@@ -1,8 +1,7 @@
 <?php declare(strict_types=1);
 
 use Chiiya\CodeStyle\CodeStyle;
-use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use Symplify\EasyCodingStandard\ValueObject\Option;
+use Symplify\EasyCodingStandard\Config\ECSConfig;
 
 require __DIR__.'/vendor/autoload.php';
 require __DIR__.'/bootstrap/app.php';
@@ -16,8 +15,5 @@ return static function (ECSConfig $config): void {
         lang_path(),
         base_path('routes'),
         base_path('tests'),
-    ]);
-    $config->skip([
-        __DIR__.'/**/*/node_modules',
     ]);
 };

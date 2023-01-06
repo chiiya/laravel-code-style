@@ -1,8 +1,7 @@
 <?php declare(strict_types=1);
 
 use Chiiya\CodeStyle\CodeStyle;
-use Rector\Core\Configuration\Option;
-use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use Rector\Config\RectorConfig;
 
 require __DIR__.'/vendor/autoload.php';
 require __DIR__.'/bootstrap/app.php';
