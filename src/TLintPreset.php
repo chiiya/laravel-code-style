@@ -14,7 +14,6 @@ use Tighten\TLint\Linters\QualifiedNamesOnlyForClassName;
 use Tighten\TLint\Linters\RemoveLeadingSlashNamespaces;
 use Tighten\TLint\Linters\RequestHelperFunctionWherePossible;
 use Tighten\TLint\Linters\RequestValidation;
-use Tighten\TLint\Linters\RestControllersMethodOrder;
 use Tighten\TLint\Linters\SpaceAfterBladeDirectives;
 use Tighten\TLint\Linters\SpacesAroundBladeRenderContent;
 use Tighten\TLint\Linters\UseAuthHelperOverFacade;
@@ -35,7 +34,6 @@ class TLintPreset implements PresetInterface
             RemoveLeadingSlashNamespaces::class,
             RequestHelperFunctionWherePossible::class,
             RequestValidation::class,
-            RestControllersMethodOrder::class,
             SpaceAfterBladeDirectives::class,
             SpacesAroundBladeRenderContent::class,
             UseAuthHelperOverFacade::class,
