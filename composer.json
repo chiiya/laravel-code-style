@@ -17,10 +17,10 @@
     ],
     "require": {
         "php": "^8.1",
-        "chiiya/code-style-php": "^2.12",
+        "chiiya/code-style-php": "^2.13",
         "illuminate/contracts": "^9.0|^10.0",
-        "nunomaduro/larastan": "^2.4",
-        "phpro/grumphp": "^1.15",
+        "nunomaduro/larastan": "^2.6",
+        "phpro/grumphp": "^2.0",
         "spatie/laravel-package-tools": "^1.14",
         "tightenco/tlint": "^8.0"
     },

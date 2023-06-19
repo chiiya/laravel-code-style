@@ -1,0 +1,8 @@
+services:
+  Chiiya\LaravelCodeStyle\TLintTask:
+    class: Chiiya\LaravelCodeStyle\TLintTask
+    arguments:
+      - '@process_builder'
+      - '@formatter.raw_process'
+    tags:
+      - {name: grumphp.task, task: tlint}
