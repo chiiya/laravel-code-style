@@ -16,7 +16,6 @@ use Tighten\TLint\Linters\RequestHelperFunctionWherePossible;
 use Tighten\TLint\Linters\RequestValidation;
 use Tighten\TLint\Linters\SpaceAfterBladeDirectives;
 use Tighten\TLint\Linters\SpacesAroundBladeRenderContent;
-use Tighten\TLint\Linters\UseAuthHelperOverFacade;
 use Tighten\TLint\Presets\PresetInterface;
 
 class TLintPreset implements PresetInterface
@@ -36,7 +35,6 @@ class TLintPreset implements PresetInterface
             RequestValidation::class,
             SpaceAfterBladeDirectives::class,
             SpacesAroundBladeRenderContent::class,
-            UseAuthHelperOverFacade::class,
             NoJsonDirective::class,
         ];
     }
